@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { Container, Table } from 'react-bootstrap'
 import { db } from '../../firebase'
+import './Users.css'
 
 function Users() {
   const[userData,setUserData] = useState([])
@@ -21,6 +22,9 @@ function Users() {
   console.log(userData)
   return (
     <Container>
+      <Container>
+        <Container>
+
         <h1>Users Info</h1>
 
         <Table striped bordered hover size="sm">
@@ -47,7 +51,9 @@ function Users() {
         }
       </tbody>
     </Table>
-
+    
+    </Container>
+    </Container>
     </Container>
   )
 }
